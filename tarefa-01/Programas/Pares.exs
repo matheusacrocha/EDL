@@ -1,5 +1,5 @@
-inicio = IO.gets("Digite o numero inicial: ") |> String.trim |> String.to_integer # Nao converte float para int
-{fim, _} = IO.gets("Digite o numero final: ") |> Integer.parse # Converte float para int
+inicio = IO.gets("Digite o numero inicial: ") |> String.trim |> String.to_integer
+{fim, _} = IO.gets("Digite o numero final: ") |> Integer.parse
 lista = Enum.to_list(inicio..fim)
 IO.puts "Lista criada: "
 IO.inspect lista
