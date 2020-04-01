@@ -6,13 +6,13 @@ defmodule Fatorial do
     end
 
     def fat(_n) do
-        try do
-            raise "O argumento passado eh invalido (numero negativo)"
-        rescue
-            e in RuntimeError -> IO.puts "Erro: " <> e.message
-        end
+        raise "O argumento passado eh invalido (numero negativo)"
     end
 end
 
 {num, _} = IO.gets("Digite um numero: ") |> Integer.parse
-IO.puts "Fatorial de #{num} = #{Fatorial.fat(num)}"
+try do
+    IO.puts "Fatorial de #{num} = #{Fatorial.fat(num)}"
+    rescue
+        e in RuntimeError -> IO.puts "Erro: " <> e.message
+end
