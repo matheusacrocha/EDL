@@ -2,7 +2,7 @@
 
 ## Introdução
 
-Elixir é uma linguagem de programação funcional, concorrente e [*open source*](https://github.com/elixir-lang/elixir) criada pelo brasileiro José Valim. Usada em diversas empresas, tais como: Discord, Pinterest, Brex, PagerDuty e Moz, Elixir utiliza a máquina virtual Erlang (BEAM), conhecida por executar sistemas em baixa latência, distribuídos e tolerantes a falhas, obtendo sucesso no desenvolvimento web e na construção de sistemas embarcados, além de se estender para suportar metaprogramação com macros e polimorfismo via protocolos.
+Elixir é uma linguagem de programação dinâmica, funcional, concorrente e [*open source*](https://github.com/elixir-lang/elixir) criada pelo brasileiro José Valim. Usada em diversas empresas, tais como: Discord, Pinterest, Brex, PagerDuty e Moz, Elixir utiliza a máquina virtual Erlang (BEAM), conhecida por executar sistemas em baixa latência, distribuídos e tolerantes a falhas, obtendo sucesso no desenvolvimento web e na construção de sistemas embarcados, além de se estender para suportar metaprogramação com macros e polimorfismo via protocolos.
 
 ## Origens e influências
 
