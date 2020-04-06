@@ -1,6 +1,6 @@
 # Tarefa 01: Artigo sobre a linguagem Elixir
 
-- [ ] Introdução sobre a linguagem
+- [x] Introdução sobre a linguagem
 - [ ] Origens e influências
-- [ ] Classificação
+- [x] Classificação
 - [x] Exemplos (adicionarei mais)
