@@ -3,4 +3,9 @@
 - [x] Introdução sobre a linguagem
 - [ ] Origens e influências
 - [x] Classificação
-- [x] Exemplos (adicionarei mais)
+- [ ] Funcionalidade (Guards e Pattern Matching)
+- [ ] Exemplos
+  - [x] Programas simples de familiarização
+  - [ ] Programa que faça algo minimamente interessante
+  - [ ] Programa que mostre o potencial da funcionalidade (comparando com outra linguagem)
+  - [ ] Programa para um cenário realista que explore a funcionalidade
