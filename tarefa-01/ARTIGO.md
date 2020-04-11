@@ -14,6 +14,8 @@ José Valim, o criador da linguagem, era um desenvolvedor Ruby. Seu principal in
 
 Lançada oficialmente em 2012, Elixir é fortemente baseada em Erlang, usando sua máquina virtual para executar os programas. Além de Erlang e Ruby, Clojure também influenciou Elixir, com o uso de protocolos.
 
+Por ser uma linguagem nova, Elixir ainda não influenciou na criação de outras linguagens. Entretanto, sua comunidade vem crescendo a cada ano, e junto com ela veio Phoenix: um framework de desenvolvimento web escrito em Elixir.
+
 ## Classificação
 
 Elixir é uma linguagem:
