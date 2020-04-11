@@ -1,7 +1,7 @@
 # Tarefa 01: Artigo sobre a linguagem Elixir
 
 - [x] Introdução sobre a linguagem
-- [ ] Origens e influências
+- [x] Origens e influências
 - [x] Classificação
 - [ ] Funcionalidade (Guards e Pattern Matching)
 - [ ] Exemplos
