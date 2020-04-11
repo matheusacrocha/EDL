@@ -22,7 +22,7 @@ Elixir é uma linguagem:
 
 - Funcional;
 - Dinâmica;
-- Compilada em *bytecode* com o comando `elixirc nome-do-programa.ex`, gerando um arquivo `.beam` ou compilada na memória com o comando `elixir nome-do-programa.exs`. O Elixir trata as duas extensões da mesma maneira, a diferença é que `.ex` são feitos para serem compilados (assim gerando o *bytecode* `.beam` em disco, e não somente na memória) e `.exs` são utilizados para *scripting*;
+- Compilada em *bytecode* com o comando `elixirc nome-do-arquivo.ex`, gerando um arquivo `.beam` ou compilada na memória com o comando `elixir nome-do-arquivo.exs`. O Elixir trata as duas extensões da mesma maneira, a diferença é que `.ex` são feitos para serem compilados (assim gerando o *bytecode* `.beam` em disco, e não somente na memória) e `.exs` são utilizados para *scripting*;
 - Concorrente;
 - De alto nível;
 - De tipagem forte;
@@ -50,7 +50,7 @@ iex(1)> :atom
 iex(2)> true == :true
 true
 iex(3)> is_atom(false)
-true   
+true
 ```
 
 ## Referências
