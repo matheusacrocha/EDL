@@ -20,13 +20,38 @@ Por ser uma linguagem nova, Elixir ainda não influenciou na criação de outras
 
 Elixir é uma linguagem:
 
-- Funcional
-- Dinâmica
-- Compilada
-- Concorrente
-- De alto nível
-- De tipagem forte
-- De propósito geral
+- Funcional;
+- Dinâmica;
+- Compilada em *bytecode* com o comando `elixirc nome-do-programa.ex`, gerando um arquivo `.beam` ou compilada na memória com o comando `elixir nome-do-programa.exs`. O Elixir trata as duas extensões da mesma maneira, a diferença é que `.ex` são feitos para serem compilados (assim gerando o *bytecode* `.beam` em disco, e não somente na memória) e `.exs` são utilizados para *scripting*;
+- Concorrente;
+- De alto nível;
+- De tipagem forte;
+- De propósito geral.
+
+## Exemplos
+
+Alguns dos exemplos abaixo utilizarão o IEx, o Shell Interativo do Elixir:
+
+### O clássico Hello World!
+
+```elixir
+iex(1)> IO.puts "Hello World!"
+Hello World!
+:ok
+```
+
+### Atoms
+
+*Atom* é um tipo de variável constante cujo valor é o seu próprio nome. Os booleans `true` e `false` também são atoms no Elixir:
+
+```elixir
+iex(1)> :atom
+:atom
+iex(2)> true == :true
+true
+iex(3)> is_atom(false)
+true   
+```
 
 ## Referências
 
@@ -34,5 +59,4 @@ https://en.wikipedia.org/wiki/Elixir_(programming_language)<br/>
 https://elixir-lang.org/<br/>
 https://www.quora.com/What-big-projects-use-Elixir<br/>
 https://www.welcometothejungle.com/en/articles/btc-elixir-jose-valim<br/>
-https://www.sitepoint.com/an-interview-with-elixir-creator-jose-valim/<br/>
-https://elixir-lang.org/getting-started/modules-and-functions.html
+https://www.sitepoint.com/an-interview-with-elixir-creator-jose-valim/
