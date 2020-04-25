@@ -28,9 +28,47 @@ Elixir é uma linguagem:
 - De tipagem forte;
 - De propósito geral.
 
-## Exemplos
+## Funcionalidades: Guards e Pattern Matching
 
-Alguns dos exemplos abaixo utilizarão o IEx, o Shell Interativo do Elixir:
+**Pattern Matching** é o ato de verificar se sequências específicas de dados apresentam um certo padrão em um conjunto de dados ou uma sequência de tokens.
+
+Em Elixir, o operador `=` é chamado de *match operator*, sendo utilizado para fazer *pattern matching*. O operador `^`, chamado de *pin operator*, serve para fixarmos o valor de uma certa variável, ao invés de alterá-lo após o *match*.
+
+Um simples exemplo de Pattern Matching, utilizando tuplas (alguns exemplos utilizarão o IEx, o Shell Interativo do Elixir):
+
+```elixir
+iex(1)> {nome, idade} = {"Matheus", 19}
+{"Matheus", 19}
+iex(2)> nome
+"Matheus"
+iex(3)> idade
+19
+iex(4)> {nome, idade} = {"Matheus", "dezenove"}
+{"Matheus", "dezenove"}
+iex(5)> nome
+"Matheus"
+iex(6)> idade
+"dezenove"
+iex(7)> {^nome, idade} = {"Lucas", 20}
+** (MatchError) no match of right hand side value: {"Lucas", 20}
+iex(7)> nome
+"Matheus"
+iex(8)> idade
+"dezenove"
+```
+
+Outro exemplo, agora utilizando listas e o operador `|`, chamado de *cons operator*. A função deste operador é separar o primeiro elemento de uma lista (geralmente chamdo de *head*) dos restantes (chamados de *tail*):
+
+```elixir
+iex(1)> [head | tail] = ["Matheus", 19, "UERJ"]
+["Matheus", 19, "UERJ"]
+iex(2)> head
+"Matheus"
+iex(3)> tail
+[19, "UERJ"]
+```
+
+## Exemplos
 
 ### O clássico Hello World!
 
@@ -42,7 +80,7 @@ Hello World!
 
 ### Atoms
 
-*Atom* é um tipo de variável constante cujo valor é o seu próprio nome. Os booleans `true` e `false` também são atoms no Elixir:
+*Atom* é um tipo de variável constante cujo valor é o seu próprio nome. Os booleans `true` e `false` também são atoms em Elixir:
 
 ```elixir
 iex(1)> :atom
@@ -53,10 +91,22 @@ iex(3)> is_atom(false)
 true
 ```
 
+### Funções anônimas
+
+Funções anônimas em Elixir são como funções lambda em outras linguagens:
+
+```elixir
+iex(1)> somar = fn (a, b) -> a + b end
+iex(2)> somar.(3, 7)
+10
+```
+
 ## Referências
 
 https://en.wikipedia.org/wiki/Elixir_(programming_language)<br/>
 https://elixir-lang.org/<br/>
 https://www.quora.com/What-big-projects-use-Elixir<br/>
 https://www.welcometothejungle.com/en/articles/btc-elixir-jose-valim<br/>
-https://www.sitepoint.com/an-interview-with-elixir-creator-jose-valim/
+https://www.sitepoint.com/an-interview-with-elixir-creator-jose-valim/<br/>
+https://hexdocs.pm/elixir/1.10.2/patterns-and-guards.html<br/>
+https://en.wikipedia.org/wiki/Pattern_matching
